@@ -102,8 +102,6 @@
       </li>
 
       <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projects</span></a>
       </li>
@@ -118,6 +116,11 @@
         <a aria-label="Navigate to the Awards section" href="#awards"
           class="waves-effect waves-dark teal-text"><i
             class="mdi-social-poll small"></i><span>Awards</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Travel section" href="#travel" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Travel</span></a>
       </li>
 
       <li class="bold">
@@ -160,6 +163,10 @@
       <li class="bold">
         <a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark teal-text"><i
             class="mdi-action-assessment small"></i><span>Awards</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Travel section" href="#travel" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Travel</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
@@ -856,58 +863,133 @@
     </section>
 
 
-<!-- Seventh Section: Skills -->
-<!-- <section id="skissssssssssslls" class="section scrollspy">
-  <h3 class="page-title white-text teal">Skills</h3>
-  <div class="container">
-    <!-- Languages-->
-    <!-- <div class="card">
-      <div class="card-content">
-        <h4 class="brown-text light">Languages</h4>
-        <div class="row text-center">
-          <div class="col s4 m3">
-            <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
-          </div>
-          <div class="col s4 m3">
-            <img alt="" src="/assets/img/Rlanguage.png" class="responsive-img" />R
-          </div>
-          <div class="col s4 m3">
-            <img alt="" src="/assets/img/Matlab.jpg" class="responsive-img" />Matlab
-          </div>
-          <div class="col s4 m3">
-            <img alt="" src="/assets/img/html5-300x300.jpg" class="responsive-img" />Html
-          </div>
-        </div>
-      </div>
-    </div> -->
+<!-- Eighth Section: Travel -->
+<section id="travel" class="section scrollspy full-height">
+  <h3 class="page-title white-text teal">Travel</h3>
+  
+  <!-- 文字容器 -->
+  <div class="container flow-text" style="text-align: justify; font-size: 16px; line-height: 1.8;">     
+    <p style="text-align: justify;">
+      My travels have taken me to a diverse array of cities.
+      As a student of transport and geography, I've developed a deep appreciation
+      for both urban landscapes and natural wonders. I find joy in exploring city streets,
+      observing how urban design intertwines with transport systems to shape daily life.
+      Equally, I'm drawn to the serenity of forests and the vastness of oceans,
+      often venturing outdoors to experience nature's beauty firsthand.
+    </p>
+    
+    <p style="text-align: justify;">
+      Through my geographical perspective, I've come to see these urban spaces
+      as more than just points on a map. Each city tells its own story,
+      with differences in planning, architecture, and culture that continue to fascinate me.
+    </p>
 
-    <!-- <div class="card">
-      <div class="card-content">
-        <h4 class="brown-text light">Softwares</h4>
-        <div class="row text-center">
-          <div class="col s4 m2">
-            <img alt="" src="/assets/img/AnyLogic.png" class="responsive-img" />AnyLogic
-          </div>
-          <div class="col s4 m2">
-            <img alt="" src="/assets/img/Arcgis.jfif" class="responsive-img" />Arcgis
-          </div>
-          <div class="col s4 m2">
-            <img alt="" src="/assets/img/geoda.jpg" class="responsive-img" />Geoda
-          </div>
-          <div class="col s4 m2">
-            <img alt="" src="/assets/img/VScode.png" class="responsive-img" />VS
-          </div>
-          <div class="col s4 m2">
-            <img alt="" src="/assets/img/SPSS.jpg" class="responsive-img" />SPSS
-          </div>
-          <div class="col s4 m2">
-            <img alt="" src="/assets/img/CAD.jpg" class="responsive-img" />CAD
-          </div>
-        </div>
-      </div>
-    </div> -->
+    <p style="text-align: justify;">
+      I've created a map to illustrate this journey: <span style="color: red;">red markers</span> indicate places where
+      I've lived for extended periods, absorbing the local culture and rhythms;
+      <span style="color: green;">green markers</span> highlight cities I've explored as a curious visitor;
+      and <span style="color: blue;">blue markers</span> point to destinations that spark my imagination for future adventures.
+    </p>
+    
 
   </div>
+
+  <!-- 地图容器 -->
+  <div class="map-container" style="margin: 40px auto; padding: 10px; background-color: rgba(255, 255, 255, 0.8); border-radius: 8px; max-width: 1000px;">
+      <div id="map" style="width: 90%; height: 500px;"></div> <!-- Leaflet.js 地图 -->
+  </div>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+      // 创建地图并设置初始视图为香港
+      const map = L.map('map').setView([0, 0], 2); // 初始视图设置为全球，缩放级别设置为2
+      // 添加 OpenStreetMap 瓦片图层，使用英语
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+}).addTo(map);
+
+      // 创建红色标记的图标
+      const redMarkerIcon = L.icon({
+          iconUrl: 'assets/img/map/redmarker.png', // 使用自定义红色标记图标
+          iconSize: [40, 40], // 图标大小
+          iconAnchor: [12, 41], // 图标锚点
+          popupAnchor: [1, -34] // 弹出窗口锚点
+      });
+
+      // 创建绿色标记的图标
+      const greenMarkerIcon = L.icon({
+          iconUrl: 'assets/img/map/greenmarker.png', // 使用自定义绿色标记图标
+          iconSize: [19, 30], // 图标大小
+          iconAnchor: [12, 41], // 图标锚点
+          popupAnchor: [1, -34] // 弹出窗口锚点
+      });
+
+      // 创建蓝色标记的图标
+      const blueMarkerIcon = L.icon({
+          iconUrl: 'assets/img/map/bluemarker.svg', // 使用自定义绿色标记图标
+          iconSize: [20, 32], // 图标大小
+          iconAnchor: [12, 41], // 图标锚点
+          popupAnchor: [1, -34] // 弹出窗口锚点
+      });
+
+// 添加香港标记
+const hongKongMarker = L.marker([22.3964, 114.1099], { icon: redMarkerIcon }).addTo(map); // 香港的坐标
+hongKongMarker.bindPopup(`
+    <div style="max-width: 150px;"> <!-- 设置最大宽度 -->
+        <b>Hong Kong</b><br>
+        <img src="assets/img/map/hongkong.jpg" alt="Hong Kong" style="width:80%; max-width: 80px; height: auto;"> <!-- 调整图片宽度 -->
+        <br>I am now living in this city. It's hot!
+    </div>
+`);
+
+// 添加慕尼黑标记
+const munichMarker = L.marker([48.1351, 11.5820], { icon: redMarkerIcon }).addTo(map); // 使用相同的红色标记
+munichMarker.bindPopup(`
+    <div style="max-width: 150px;"> <!-- 设置最大宽度 -->
+        <b>Munich</b><br>
+
+        <img src="assets/img/map/munich.jpg" alt="Munich" style="width:100%; max-width: 100px; height: auto;"> <!-- 调整图片宽度 -->
+        <br>Munich will always be my favorite European city. It is very clean, with streams in the countryside as clear as pure water. There, I met many lifelong friends.
+    </div>
+`);
+
+// 添加 Gaztelugatxe 标记
+const gaztelugatxeMarker = L.marker([43.3860, -2.7257], { icon: greenMarkerIcon }).addTo(map); // Gaztelugatxe 的坐标
+gaztelugatxeMarker.bindPopup(`
+    <div style="max-width: 150px;"> <!-- 设置最大宽度 -->
+        <b>Gaztelugatxe</b><br>
+        After drinks with friends, a 90-min hike led to this wild Bay of Biscay beach. 
+    We witnessed the 60-million-year-old Game of Thrones filming location: cliffs, shallows, and sea stacks.<br>
+        <img src="assets/img/map/gaztelugatxe.jpg" alt="Gaztelugatxe" style="width:100%; max-width: 100px; height: auto;"><br> <!-- 调整图片宽度 -->
+        <a href="https://maps.app.goo.gl/xTFxfyLCfxLvAEsL9" target="_blank">View on Google Maps</a>
+    </div>
+`);
+
+// 添加布里斯班标记
+const brisbaneMarker = L.marker([-27.4698, 153.0251], { icon: blueMarkerIcon }).addTo(map); // 布里斯班的坐标
+brisbaneMarker.bindPopup(`
+    <div style="max-width: 150px;"> <!-- 设置最大宽度 -->
+        <b>Brisbane</b><br>
+        On my bucket list for a trip or potential relocation.<br>
+        <a href="https://maps.app.goo.gl/YcE1vwuD3h3XJY3b7" target="_blank">View on Google Maps</a>
+    </div>
+`);
+
+  </script>
+
+  <style>
+      /* 媒体查询：调整手机端显示 */
+      @media (max-width: 600px) {
+          .text-container {
+              margin-bottom: 10px; /* 减少文字容器的底部间距 */
+          }
+          .page-title {
+              margin-bottom: 15px; /* 增加标题与文字容器之间的间距 */
+          }
+      }
+  </style>
 </section>
 
 <!DOCTYPE html>
