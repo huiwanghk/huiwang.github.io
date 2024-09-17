@@ -910,38 +910,104 @@
   </div>
 </section>
 
+<!DOCTYPE html>
+<html lang="en"> <!-- 将语言改为英语 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClustrMaps Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            padding: 20px;
+        }
+        .full-height {
+            height: 100vh;
+        }
+        .white-text {
+            color: white;
+        }
+        .teal {
+            background-color: #00796b;
+        }
+        .hoverline {
+            color: #00796b;
+            text-decoration: none;
+        }
+        .hoverline:hover {
+            text-decoration: underline;
+        }
+        .counter-text {
+            text-align: left;
+            font-size: 16px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center; /* Align items vertically centered */
+        }
+        .counter-image {
+            margin-left: 10px; /* Add some space between text and image */
+        }
+        .divider {
+            border-top: 1px solid #ccc; /* Add a top border to create a divider line */
+            margin: 20px 0; /* Add some vertical margin */
+        }
+        .contact-info {
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Align items vertically centered */
+            margin-bottom: 5px; /* 调整为更小的外边距 */
+        }
+        .contact-info a {
+            margin-left: 10px; /* Add space between icon and text */
+        }
+        /* Adjust the ClustrMaps globe */
+        #clustr_globe {
+            margin-top: 40px; /* Increase top margin for more spacing */
+        }
+    </style>
+</head>
+<body>
+
 <!-- Eighth Section: Contact -->
 <section id="contact" class="section scrollspy full-height">
   <h3 class="page-title white-text teal">Contact</h3>
-  <div class="container">
-    <p>
-      <a aria-label="Email Hui" href="mailto:huiwanghk@connect.hku.hk" target="_blank" data-position="top"
-        data-tooltip="Email Hui" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-          class="fa fa-envelope"></i><a aria-label="Email Hui" href="mailto:huiwanghk@connect.hku.hk"
-          class="hoverline" style="text-align: left; font-size: 16px;">  huiwanghk@connect.hku.hk</a></a>
-    </p>
-    <p>
-      <a aria-label="View Hui on LinkedIn" href="https://www.linkedin.com/in/hui-wang-b0488b199/" target="_blank"
-        data-position="top" data-tooltip="View Hui on LinkedIn"
-        class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-          class="fa fa-linkedin"></i><a aria-label="Hui on LinkedIn" href="https://www.linkedin.com/in/hui-wang-b0488b199/"
-          class="hoverline" target="_blank" style="text-align: left; font-size: 16px;">  linkedin.com/in/hui-wang-b0488b199/</a></a>
-    </p>
 
-    <div id="map2">
-      <p style="text-align: left; margin-top: 10px; font-size: 16px;" >Find Me Here: Jockey Club Tower, The University of Hong Kong, Pokfulam, Hong Kong SAR, China.</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.860336865933!2d114.1320517749587!3d22.283279743512765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403ff8505de1079%3A0xf81d482d0cbc5f77!2sThe%20University%20of%20Hong%20Kong%2C%20The%20Jockey%20Club%20Tower!5e0!3m2!1sen!2shk!4v1705045026281!5m2!1sen!2shk"
-          width="800"
-          height="400"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
+  <div class="container">
+      <div class="contact-info">
+          <a aria-label="Email Hui" href="mailto:huiwanghk@connect.hku.hk" target="_blank" data-position="top"
+              data-tooltip="Email Hui" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+              <i class="fa fa-envelope"></i>
+          </a>
+          <a aria-label="Email Hui" href="mailto:huiwanghk@connect.hku.hk" class="hoverline" style="font-size: 16px;">
+              huiwanghk@connect.hku.hk
+          </a>
+      </div>
+      <!-- Divider Line -->
+      <div style="border-top: 1px solid #ccc; margin: 3vh 0;"></div> <!-- 新增的横线 -->
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="clustr-map"> </div>
+        <div style="border-top: 1px solid #ccc; margin: 3vh 0;"></div> <!-- 这里增加的横线 -->
+      </div>
+  </div>
+
+  <!-- ClustrMaps Globe at the Bottom -->
+  <div style="width: 30%; margin: 0 auto;">
+      <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=JnNpxa44ao2NTw1SEMdTyBmxadl7CF9n-SBR8v7xV_o"></script>
   </div>
   
+  <!-- Access Counter -->
+  <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
+    <span>Page visitors: </span>
+    <a href="https://www.easycounter.com/" class="counter-image" style="margin-left: 5px;">
+        <img src="https://www.easycounter.com/counter.php?elvinwongwong" border="0" alt="Free Hit Counter" style="vertical-align: middle;">
+    </a>
+  </div>
 </section>
+
+</body>
+</html>
 
 
   </main>
