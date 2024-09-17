@@ -71,64 +71,66 @@
   <link href="https://cdn.jsdelivr.net/npm/twemoji@13.0.1/2/twemoji.min.css" rel="stylesheet">
 </head>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            display: flex;            /* 使用 Flexbox 布局 */
+            justify-content: flex-start; /* 左对齐 */
+            padding: 20px 10px;      /* 添加内边距 */
+        }
+        .logo img {
+            width: 120px;            /* 设置固定宽度，增加头像大小 */
+            height: auto;            /* 保持头像的纵横比 */
+            border-radius: 50%;      /* 使头像成为圆形 */
+        }
+        .side-nav {
+            padding-top: 0;          /* 去掉顶部内边距 */
+            padding-left: 10px;      /* 添加左内边距 */
+        }
+        .side-nav li {
+            text-align: left;        /* 确保导航项左对齐 */
+        }
+    </style>
+</head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
-
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/profile.jpg" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-
-
-      <li class="bold">
-        <a aria-label="Navigate to the Publications section" href="#publications"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Publications</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Service section" href="#service"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-grade small"></i><span>Service</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Awards section" href="#awards"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-poll small"></i><span>Awards</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Travel section" href="#travel" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Travel</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-    </ul>
-  </nav>
+    <nav class="hide-on-small-only">
+        <ul class="side-nav fixed section table-of-contents">
+            <li class="logo">
+                <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo grey-blue-text">
+                    <img src="/assets/img/profile.jpg" class="circle img-responsive profile-pic" alt="avatar">
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi mdi-account small"></i><span>About</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Publications section" href="#publications" class="waves-effect waves-dark teal-text"><i class="mdi mdi-trending-up small"></i><span>Publications</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i class="mdi mdi-book-open-page-variant small"></i><span>Projects</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Service section" href="#service" class="waves-effect waves-dark teal-text"><i class="mdi mdi-star small"></i><span>Service</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark teal-text"><i class="mdi mdi-trophy small"></i><span>Awards</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Travel section" href="#travel" class="waves-effect waves-dark teal-text"><i class="mdi mdi-earth small"></i><span>Travel</span></a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
 
   <!-- Nav class 2 -->
   <nav class="hide-on-large only trigger z-depth-1">
@@ -136,7 +138,7 @@
       class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     <div class="name-title">
       <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Hui
-        Wang</a><span class="black-text"> Transportation and Geography Researcher</span>
+        Wang</a><span class="black-text"> HKU Geography</span>
     </div>
   </nav>
 
@@ -166,11 +168,7 @@
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Travel section" href="#travel" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Travel</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
+            class="mdi-social-earth small"></i><span>Travel</span></a>
       </li>
 
     </ul>
@@ -178,61 +176,83 @@
 
   <!-- Main Content-->
   <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col s12 m6 l6">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 15px;">
-            <div class="caption">
-              <br>
-              <h2 style="font-weight: 600; font-size: 40px">Hi There!&#x1F44B; 
-              <br>I'm <span class="teal">Hui Wang.</span></h2>
-
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 350; color:#004d40"></span></h5>
-
+    <!DOCTYPE html>
+    <html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Typed.js 示例</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <style>
+            h5 {
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- First Section: Heading lines and image -->
+        <section id="intro" class="section scrollspy full-height">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="col s12 m6 l6">
+                    <div class="content section-padding valign" style="margin-left: 10%; margin-top: 15px;">
+                        <div class="caption">
+                            <br>
+                            <h2 style="font-weight: 600; font-size: 40px">Hi There!&#x1F44B; 
+                            <br>I'm <span class="teal">Hui Wang.</span></h2>
+                            <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+                        </div>
+                        <div class="social" style="display: block; align-items: center;">
+                            <a href="https://www.linkedin.com/in/huiwanghk/?locale=en_US" target="_blank">
+                                <button class="icon-btn linkedin-circle" style="width: 50px; height: 50px; border-radius: 100%;">
+                                    <img alt="Linkedin" src="/assets/img/linkedin.png" style="height: 30px; width: 30px" class="activator" />
+                                </button>
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Hui-Wang-501" target="_blank">
+                                <button class="icon-btn researchgate-circle" style="width: 50px; height: 50px; border-radius: 100%;">
+                                    <img src="/assets/img/researchgate.png" style="width: 30px; height: 30px;">
+                                </button>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=FZ7WXRwAAAAJ&hl=en" target="_blank">
+                                <button class="icon-btn google" style="width: 50px; height: 50px;">
+                                    <img src="/assets/img/googleschoolar.png" style="width: 30px; height: 30px;">
+                                </button>
+                            </a>
+                            <a href="https://twitter.com/TransGeoHui" target="_blank">
+                                <button class="icon-btn twitter" style="width: 50px; height: 50px;">
+                                    <img src="/assets/img/twitter.png" style="width: 30px; height: 30px;">
+                                </button>
+                            </a>
+                        </div>
+    
+                        <div class="caption">
+                            <h5 style="font-weight: bold; font-size: 16px;"><a href="https://www.jlfc.hku.hk/" target="_blank" class="white-text hoverline">The Joint Lab on Future Cities</a></h5>
+                            <h5 style="font-weight: bold; font-size: 16px;"><a href="https://www.geog.hku.hk/" target="_blank" class="white-text hoverline">Department of Geography</a></h5>
+                            <h5 style="font-weight: bold; font-size: 16px;"><a href="https://www.institute-of-transport-studies.hku.hk/" target="_blank" class="white-text hoverline">Institute of Transport Studies</a></h5>
+                            <h5 style="font-weight: bold; font-size: 16px;"><a href="https://www.hku.hk/" target="_blank" class="white-text hoverline">The University of Hong Kong</a></h5>
+                        </div>
+    
+                        <div class='buttons' style="font-weight: bold; font-size: 15px;">
+                            <a href="#about" class="readme">Read More</a>
+                            <a aria-label="Email Hui" href="mailto:huiwanghk@connect.hku.hk" class="contactme">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="social" style="display: block; align-items: center;">
-              
-              <a href="https://www.linkedin.com/in/huiwanghk/?locale=en_US" target="_blank">
-                <button class="icon-btn linkedin-circle" style="width: 50px; height: 50px; border-radius: 100%;" >
-                  <img alt="Linkedin" src="/assets/img/linkedin.png" style="height: 30px; width: 30px" class="activator" />
-                </button>
-              </a>
-              <a href="https://www.researchgate.net/profile/Hui-Wang-501" target="_blank">
-                <button class="icon-btn researchgate-circle" style="width: 50px; height: 50px; border-radius: 100%;">
-                  <img src="/assets/img/researchgate.png" style="width: 30px; height: 30px;">
-                </button>
-              </a>
-              <a href="https://scholar.google.com/citations?user=FZ7WXRwAAAAJ&hl=en" target="_blank">
-                <button class="icon-btn google" style="width: 50px; height: 50px;">
-                  <img src="/assets/img/googleschoolar.png" style="width: 30px; height: 30px;">
-                </button>
-              </a>
-              <a href="https://twitter.com/TransGeoHui" target="_blank">
-                <button class="icon-btn twitter" style="width: 50px; height: 50px;">
-                  <img src="/assets/img/twitter.png" style="width: 30px; height: 30px;">
-                </button>
-              </a>
-            </div>
-
-            <div class="caption">
-              <h5 style="font-weight: bold; font-size: 16px;"><a href="https://www.jlfc.hku.hk/" target="_blank" class="white-text hoverline">The Joint Lab on Future Cities</a></h5>
-              <h5 style="font-weight: bold; font-size: 16px;"><a href="https://www.geog.hku.hk/" target="_blank" class="white-text hoverline">Department of Geography</a></h5>
-              <h5 style="font-weight: bold; font-size: 16px;"><a href="https://www.institute-of-transport-studies.hku.hk/" target="_blank" class="white-text hoverline">Institute of Transport Studies</a></h5>
-              <h5 style="font-weight: bold; font-size: 16px;"><a href="https://www.hku.hk/" target="_blank" class="white-text hoverline">The University of Hong Kong</a></h5>
-            </div>
-
-            <div class='buttons' style="font-weight: bold; font-size: 15px;">
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-    </section>
+        </section>
+    
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function() {
+                var typed = new Typed('.typing', {
+                    strings: ["PhD Candidate","Transport Researcher", "Geography Enthusiast"],
+                    loop: true,
+                    typeSpeed: 80,
+                    backSpeed: 40
+                });
+            });
+        </script>
+    </body>
+    </html>
 
 
     <!-- Second Section: About -->
@@ -280,6 +300,14 @@
           & <a href="https://faculty.bjtu.edu.cn/trans/5610.html" target="_blank" class="teal-text hoverline" style="text-align: justify; text-transform: none">Prof. Haiying Li</a>, Sep. 2015 – Jun. 2019<br>
           ※ Exchange at School of Engineering and Design, <a href="https://www.tum.de/" target="_blank" class="teal-text hoverline" style="text-align: justify; text-transform: none">Technical University of Munich</a>, 
           Munich, Germany, Oct. 2021 – Jun. 2022<br>
+        </p>
+
+        <p style="text-align: left; font-size: 16px;">
+          Email:<br>
+          <span style="display: inline-block;">※</span>
+          <a aria-label="Email Hui" href="mailto:huiwanghk@connect.hku.hk" class="hoverline" style="font-size: 16px;">
+              huiwanghk@connect.hku.hk
+          </a><br>
         </p>
       </div>
     </section>
@@ -862,247 +890,322 @@
 
     </section>
 
-
-<!-- Eighth Section: Travel -->
-<section id="travel" class="section scrollspy full-height">
-  <h3 class="page-title white-text teal">Travel</h3>
-  
-  <!-- 文字容器 -->
-  <div class="container flow-text" style="text-align: justify; font-size: 16px; line-height: 1.8;">     
-    <p style="text-align: justify;">
-      My travels have taken me to a diverse array of cities.
-      As a student of transport and geography, I've developed a deep appreciation
-      for both urban landscapes and natural wonders. I find joy in exploring city streets,
-      observing how urban design intertwines with transport systems to shape daily life.
-      Equally, I'm drawn to the serenity of forests and the vastness of oceans,
-      often venturing outdoors to experience nature's beauty firsthand.
-    </p>
+    <!DOCTYPE html>
+    <html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Map</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <style>
+            /* 通用样式 */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .section {
+                padding: 20px;
+            }
+            .map-container {
+                margin: 40px auto;
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 8px;
+                max-width: 1000px;
+                height: 500px; /* 确保容器具有固定高度 */
+            }
+            /* 媒体查询：调整手机端显示 */
+            @media (max-width: 600px) {
+                .text-container {
+                    margin-bottom: 10px; /* 减少文字容器的底部间距 */
+                }
+                .page-title {
+                    margin-bottom: 15px; /* 增加标题与文字容器之间的间距 */
+                }
+            }
+        </style>
+    </head>
+    <body>
     
-    <p style="text-align: justify;">
-      Through my geographical perspective, I've come to see these urban spaces
-      as more than just points on a map. Each city tells its own story,
-      with differences in planning, architecture, and culture that continue to fascinate me.
-    </p>
+      <!DOCTYPE html>
+      <html lang="zh">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Travel Map</title>
+          <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+          <style>
+              /* 通用样式 */
+              body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+              }
+              .section {
+                  padding: 20px;
+              }
+              .map-container {
+                  margin: 60px auto; /* 增加上外边距，增加空间 */
+                  padding: 10px;
+                  background-color: rgba(255, 255, 255, 0.8);
+                  border-radius: 8px;
+                  max-width: 1000px;
+                  height: 500px; /* 确保容器具有固定高度 */
+              }
+              /* 媒体查询：调整手机端显示 */
+              @media (max-width: 600px) {
+                  .text-container {
+                      margin-bottom: 10px; /* 减少文字容器的底部间距 */
+                  }
+                  .page-title {
+                      margin-bottom: 15px; /* 增加标题与文字容器之间的间距 */
+                  }
+              }
+          </style>
+      </head>
+      <body>
+      
+        <!DOCTYPE html>
+        <html lang="en"> <!-- 将语言改为英语 -->
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>ClustrMaps Test</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                }
+                .section {
+                    padding: 20px;
+                }
+                .full-height {
+                    height: 100vh;
+                }
+                .white-text {
+                    color: white;
+                }
+                .teal {
+                    background-color: #00796b;
+                }
+                .hoverline {
+                    color: #00796b;
+                    text-decoration: none;
+                }
+                .hoverline:hover {
+                    text-decoration: underline;
+                }
+                .counter-text {
+                    text-align: left;
+                    font-size: 16px;
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: center; /* Align items vertically centered */
+                }
+                .counter-image {
+                    margin-left: 10px; /* Add some space between text and image */
+                }
+                .divider {
+                    border-top: 1px solid #ccc; /* Add a top border to create a divider line */
+                    margin: 20px 0; /* Add some vertical margin */
+                }
+                .contact-info {
+                    display: flex; /* Use flexbox layout */
+                    align-items: center; /* Align items vertically centered */
+                    margin-bottom: 5px; /* 调整为更小的外边距 */
+                }
+                .contact-info a {
+                    margin-left: 10px; /* Add space between icon and text */
+                }
+                /* Adjust the ClustrMaps globe */
+                #clustr_globe {
+                    margin-top: 40px; /* Increase top margin for more spacing */
+                }
+            </style>
+        </head>
+        <body>
+      
 
-    <p style="text-align: justify;">
-      I've created a map to illustrate this journey: <span style="color: red;">red markers</span> indicate places where
-      I've lived for extended periods, absorbing the local culture and rhythms;
-      <span style="color: green;">green markers</span> highlight cities I've explored as a curious visitor;
-      and <span style="color: blue;">blue markers</span> point to destinations that spark my imagination for future adventures.
-    </p>
-    
 
-  </div>
+      <!-- 第八节：旅行 -->
+      <section id="travel" class="section scrollspy full-height">
+          <h3 class="page-title white-text teal">Travel</h3>
+          
+          <!-- 文字容器 -->
+          <div class="container flow-text" style="text-align: justify; font-size: 16px; line-height: 1.8;">     
+              <p>
+                  My travels have taken me to a diverse array of cities.
+                  As a student of transport and geography, I've developed a deep appreciation
+                  for both urban landscapes and natural wonders. I find joy in exploring city streets,
+                  observing how urban design intertwines with transport systems to shape daily life.
+                  Equally, I'm drawn to the serenity of forests and the vastness of oceans,
+                  often venturing outdoors to experience nature's beauty firsthand.
+              </p>
+              
+              <p>
+                  Through my geographical perspective, I've come to see these urban spaces
+                  as more than just points on a map. Each city tells its own story,
+                  with differences in planning, architecture, and culture that continue to fascinate me.
+              </p>
+      
+              <p>
+                  I've created a map to illustrate this journey: <span style="color: red;">red markers</span> indicate places where
+                  I've lived for extended periods, absorbing the local culture and rhythms;
+                  <span style="color: green;">green markers</span> highlight cities I've explored as a curious visitor;
+                  and <span style="color: blue;">blue markers</span> point to destinations that spark my imagination for future adventures.
+              </p>
+          </div>
+      
+          <!-- 地图容器 -->
+          <div class="map-container">
+              <div id="map" style="width: 100%; height: 100%;"></div> <!-- Leaflet.js 地图 -->
+          </div>
+      
+          <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+          <script>
+              // 确保在窗口加载后初始化地图
+              window.onload = function() {
+                  // 创建地图并设置初始视图为全球
+                  const map = L.map('map').setView([0, 0], 2); // 初始视图设置为全球，缩放级别设置为2
+                  
+                  // 添加 CartoDB Positron 瓦片图层
+                  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+                      maxZoom: 19,
+                      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+                  }).addTo(map);
+      
+                  // 创建红色标记的图标
+                  const redMarkerIcon = L.icon({
+                      iconUrl: 'assets/img/map/redmarker.png', // 使用自定义红色标记图标
+                      iconSize: [40, 40], // 图标大小
+                      iconAnchor: [12, 41], // 图标锚点
+                      popupAnchor: [1, -34] // 弹出窗口锚点
+                  });
+      
+                  // 创建绿色标记的图标
+                  const greenMarkerIcon = L.icon({
+                      iconUrl: 'assets/img/map/greenmarker.png', // 使用自定义绿色标记图标
+                      iconSize: [19, 30], // 图标大小
+                      iconAnchor: [12, 41], // 图标锚点
+                      popupAnchor: [1, -34] // 弹出窗口锚点
+                  });
+      
+                  // 创建蓝色标记的图标
+                  const blueMarkerIcon = L.icon({
+                      iconUrl: 'assets/img/map/bluemarker.svg', // 使用自定义蓝色标记图标
+                      iconSize: [20, 32], // 图标大小
+                      iconAnchor: [12, 41], // 图标锚点
+                      popupAnchor: [1, -34] // 弹出窗口锚点
+                  });
+      
+                  // 添加香港标记
+                  const hongKongMarker = L.marker([22.3964, 114.1099], { icon: redMarkerIcon }).addTo(map); // 香港的坐标
+                  hongKongMarker.bindPopup(`
+                      <div style="max-width: 150px;">
+                          <b>Hong Kong</b><br>
+                          <img src="assets/img/map/hongkong.jpg" alt="Hong Kong" style="width:80%; max-width: 80px; height: auto;">
+                          <br>I am now living in this city. It's hot!
+                      </div>
+                  `);
 
-  <!-- 地图容器 -->
-  <div class="map-container" style="margin: 40px auto; padding: 10px; background-color: rgba(255, 255, 255, 0.8); border-radius: 8px; max-width: 1000px;">
-      <div id="map" style="width: 90%; height: 500px;"></div> <!-- Leaflet.js 地图 -->
-  </div>
+                  // 添加北京标记
+                  const beijingMarker = L.marker([39.9042, 116.4074], { icon: redMarkerIcon }).addTo(map); // 使用相同的红色标记
+                  beijingMarker.bindPopup(`
+                      <div style="max-width: 150px;">
+                          <b>Beijing</b>
+                          <br>The ages between 18 and 22 are certainly among the best times in a person's life. 
+                          I'm very grateful that I spent those years in Beijing, and even more so that I lived near the 
+                          Second Ring Road. I loved riding my bike along Xueyuan Road on summer nights in Beijing, and 
+                          I also enjoyed taking walks in Jingshan Park. Every time I was there, I felt especially comfortable and had a sense of home. 
+                          After staying for four years, 
+                          I feel I've acquired some of that open-minded and easygoing attitude of the Beijing locals.</br>
+                          <a href="https://maps.app.goo.gl/46aF7BF8pGoMo6BV6" target="_blank">View on Google Maps</a>    
+                  </div>
+                  `);
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-      // 创建地图并设置初始视图为香港
-      const map = L.map('map').setView([0, 0], 2); // 初始视图设置为全球，缩放级别设置为2
-      // 添加 OpenStreetMap 瓦片图层，使用英语
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-}).addTo(map);
+                  // 添加慕尼黑标记
+                  const munichMarker = L.marker([48.1351, 11.5820], { icon: redMarkerIcon }).addTo(map); // 使用相同的红色标记
+                  munichMarker.bindPopup(`
+                      <div style="max-width: 150px;">
+                          <b>Munich</b><br>
+                          <img src="assets/img/map/munich.jpg" alt="Munich" style="width:100%; max-width: 100px; height: auto;">
+                          <br>Munich will always be my favorite European city. It is very clean, with streams in the countryside as clear as pure water. There, I met many lifelong friends.
+                      </div>
+                  `);
+      
+                  // 添加 Gaztelugatxe 标记
+                  const gaztelugatxeMarker = L.marker([43.3860, -2.7257], { icon: greenMarkerIcon }).addTo(map); // Gaztelugatxe 的坐标
+                  gaztelugatxeMarker.bindPopup(`
+                      <div style="max-width: 150px;">
+                          <b>Gaztelugatxe</b><br>
+                          After drinks with friends, a 90-min hike led to this wild Bay of Biscay beach.
+                          We witnessed the 60-million-year-old Game of Thrones filming location: cliffs, shallows, and sea stacks.<br>
+                          <img src="assets/img/map/gaztelugatxe.jpg" alt="Gaztelugatxe" style="width:100%; max-width: 100px; height: auto;"><br>
+                          <a href="https://maps.app.goo.gl/xTFxfyLCfxLvAEsL9" target="_blank">View on Google Maps</a>
+                      </div>
+                  `);
+      
+                  // 添加布里斯班标记
+                  const brisbaneMarker = L.marker([-27.4698, 153.0251], { icon: blueMarkerIcon }).addTo(map); // 布里斯班的坐标
+                  brisbaneMarker.bindPopup(`
+                      <div style="max-width: 150px;">
+                          <b>Brisbane</b><br>
+                          On my bucket list for a trip or potential relocation.<br>
+                          <a href="https://maps.app.goo.gl/52SPjxoczwAin8Mm7" target="_blank">View on Google Maps</a>
+                      </div>
+                  `);
+              };
+          </script>
 
-      // 创建红色标记的图标
-      const redMarkerIcon = L.icon({
-          iconUrl: 'assets/img/map/redmarker.png', // 使用自定义红色标记图标
-          iconSize: [40, 40], // 图标大小
-          iconAnchor: [12, 41], // 图标锚点
-          popupAnchor: [1, -34] // 弹出窗口锚点
-      });
-
-      // 创建绿色标记的图标
-      const greenMarkerIcon = L.icon({
-          iconUrl: 'assets/img/map/greenmarker.png', // 使用自定义绿色标记图标
-          iconSize: [19, 30], // 图标大小
-          iconAnchor: [12, 41], // 图标锚点
-          popupAnchor: [1, -34] // 弹出窗口锚点
-      });
-
-      // 创建蓝色标记的图标
-      const blueMarkerIcon = L.icon({
-          iconUrl: 'assets/img/map/bluemarker.svg', // 使用自定义绿色标记图标
-          iconSize: [20, 32], // 图标大小
-          iconAnchor: [12, 41], // 图标锚点
-          popupAnchor: [1, -34] // 弹出窗口锚点
-      });
-
-// 添加香港标记
-const hongKongMarker = L.marker([22.3964, 114.1099], { icon: redMarkerIcon }).addTo(map); // 香港的坐标
-hongKongMarker.bindPopup(`
-    <div style="max-width: 150px;"> <!-- 设置最大宽度 -->
-        <b>Hong Kong</b><br>
-        <img src="assets/img/map/hongkong.jpg" alt="Hong Kong" style="width:80%; max-width: 80px; height: auto;"> <!-- 调整图片宽度 -->
-        <br>I am now living in this city. It's hot!
-    </div>
-`);
-
-// 添加慕尼黑标记
-const munichMarker = L.marker([48.1351, 11.5820], { icon: redMarkerIcon }).addTo(map); // 使用相同的红色标记
-munichMarker.bindPopup(`
-    <div style="max-width: 150px;"> <!-- 设置最大宽度 -->
-        <b>Munich</b><br>
-
-        <img src="assets/img/map/munich.jpg" alt="Munich" style="width:100%; max-width: 100px; height: auto;"> <!-- 调整图片宽度 -->
-        <br>Munich will always be my favorite European city. It is very clean, with streams in the countryside as clear as pure water. There, I met many lifelong friends.
-    </div>
-`);
-
-// 添加 Gaztelugatxe 标记
-const gaztelugatxeMarker = L.marker([43.3860, -2.7257], { icon: greenMarkerIcon }).addTo(map); // Gaztelugatxe 的坐标
-gaztelugatxeMarker.bindPopup(`
-    <div style="max-width: 150px;"> <!-- 设置最大宽度 -->
-        <b>Gaztelugatxe</b><br>
-        After drinks with friends, a 90-min hike led to this wild Bay of Biscay beach. 
-    We witnessed the 60-million-year-old Game of Thrones filming location: cliffs, shallows, and sea stacks.<br>
-        <img src="assets/img/map/gaztelugatxe.jpg" alt="Gaztelugatxe" style="width:100%; max-width: 100px; height: auto;"><br> <!-- 调整图片宽度 -->
-        <a href="https://maps.app.goo.gl/xTFxfyLCfxLvAEsL9" target="_blank">View on Google Maps</a>
-    </div>
-`);
-
-// 添加布里斯班标记
-const brisbaneMarker = L.marker([-27.4698, 153.0251], { icon: blueMarkerIcon }).addTo(map); // 布里斯班的坐标
-brisbaneMarker.bindPopup(`
-    <div style="max-width: 150px;"> <!-- 设置最大宽度 -->
-        <b>Brisbane</b><br>
-        On my bucket list for a trip or potential relocation.<br>
-        <a href="https://maps.app.goo.gl/52SPjxoczwAin8Mm7" target="_blank">View on Google Maps</a>
-    </div>
-`);
-
-  </script>
-
-  <style>
-      /* 媒体查询：调整手机端显示 */
-      @media (max-width: 600px) {
-          .text-container {
-              margin-bottom: 10px; /* 减少文字容器的底部间距 */
-          }
-          .page-title {
-              margin-bottom: 15px; /* 增加标题与文字容器之间的间距 */
-          }
-      }
-  </style>
-</section>
-
-<!DOCTYPE html>
-<html lang="en"> <!-- 将语言改为英语 -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClustrMaps Test</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .section {
-            padding: 20px;
-        }
-        .full-height {
-            height: 100vh;
-        }
-        .white-text {
-            color: white;
-        }
-        .teal {
-            background-color: #00796b;
-        }
-        .hoverline {
-            color: #00796b;
-            text-decoration: none;
-        }
-        .hoverline:hover {
-            text-decoration: underline;
-        }
-        .counter-text {
-            text-align: left;
-            font-size: 16px;
-            margin-top: 10px;
-            display: flex;
-            align-items: center; /* Align items vertically centered */
-        }
-        .counter-image {
-            margin-left: 10px; /* Add some space between text and image */
-        }
-        .divider {
-            border-top: 1px solid #ccc; /* Add a top border to create a divider line */
-            margin: 20px 0; /* Add some vertical margin */
-        }
-        .contact-info {
-            display: flex; /* Use flexbox layout */
-            align-items: center; /* Align items vertically centered */
-            margin-bottom: 5px; /* 调整为更小的外边距 */
-        }
-        .contact-info a {
-            margin-left: 10px; /* Add space between icon and text */
-        }
-        /* Adjust the ClustrMaps globe */
-        #clustr_globe {
-            margin-top: 40px; /* Increase top margin for more spacing */
-        }
-    </style>
-</head>
-<body>
-
-<!-- Eighth Section: Contact -->
-<section id="contact" class="section scrollspy full-height">
-  <h3 class="page-title white-text teal">Contact</h3>
-
-  <div class="container">
-      <div class="contact-info">
-          <a aria-label="Email Hui" href="mailto:huiwanghk@connect.hku.hk" target="_blank" data-position="top"
-              data-tooltip="Email Hui" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-              <i class="fa fa-envelope"></i>
-          </a>
-          <a aria-label="Email Hui" href="mailto:huiwanghk@connect.hku.hk" class="hoverline" style="font-size: 16px;">
-              huiwanghk@connect.hku.hk
-          </a>
-      </div>
       <!-- Divider Line -->
       <div style="border-top: 1px solid #ccc; margin: 3vh 0;"></div> <!-- 新增的横线 -->
       <div style="display: flex; flex-direction: column; align-items: center;">
         <div class="clustr-map"> </div>
         <div style="border-top: 1px solid #ccc; margin: 3vh 0;"></div> <!-- 这里增加的横线 -->
       </div>
-  </div>
 
-  <!-- ClustrMaps Globe at the Bottom -->
-  <div style="width: 30%; margin: 0 auto;">
-      <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=JnNpxa44ao2NTw1SEMdTyBmxadl7CF9n-SBR8v7xV_o"></script>
-  </div>
+      <!-- ClustrMaps Globe at the Bottom -->
+      <div style="width: 20%; margin: 0 auto;">
+        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=JnNpxa44ao2NTw1SEMdTyBmxadl7CF9n-SBR8v7xV_o"></script>
+      </div>
+
+      <!-- Access Counter -->
+      <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
+        <span>Page visitors: </span>
+        <a href="https://www.easycounter.com/" class="counter-image" style="margin-left: 5px;">
+          <img src="https://www.easycounter.com/counter.php?elvinwongwong" border="0" alt="Free Hit Counter" style="vertical-align: middle;">
+        </a>
+      </div>
+
+      <!-- Access Counter -->
+      <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
+        <span> : </span>
+        <a href="https://www.easycounter.com/" class="counter-image" style="margin-left: 5px;">
+          <img src="https://www.easycounter.com/counter.php?elvinwongwong" border="0" alt="Free Hit Counter" style="vertical-align: middle;">
+        </a>
+      </div>
   
-  <!-- Access Counter -->
-  <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-    <span>Page visitors: </span>
-    <a href="https://www.easycounter.com/" class="counter-image" style="margin-left: 5px;">
-        <img src="https://www.easycounter.com/counter.php?elvinwongwong" border="0" alt="Free Hit Counter" style="vertical-align: middle;">
-    </a>
-  </div>
-</section>
+
+      </body>
+      </html>
+
+
+
 
 </body>
 </html>
 
 
-  </main>
-
-  </script>
+</main>
 
   <!-- typed.js -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
-      strings: ["PhD Candidate", "Transport Researcher", "Geography Enthusiast"],
+      strings: ["Pythonist", "Developer", "Fast Learner"],
       loop: true,
-      typeSpeed: 50,
+      typeSpeed: 80,
       backSpeed: 40
     });
   </script>
