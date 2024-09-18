@@ -1299,6 +1299,7 @@
             yangzhouMarker.bindPopup(`
                     <div style="max-width: 150px;">
                     <b>Yangzhou</b>
+                    <img src="assets/img/map/yangzhou.jpg" alt="yangzhou" style="width:100%; max-width: 100px; height: auto;"><br>
                     <br>I grew up in a small county town north of Yangzhou, an area known as the "land of fish and rice."
                      Yangzhou enjoys a pleasant and humid climate, with almost no natural disasters. The United Nations has recognized it as a livable city. 
                      The region is blessed with abundant water resources, with major rivers like the Yangtze, the Grand Canal, and the Slender West Lake crisscrossing the landscape. 
@@ -1346,6 +1347,22 @@
                           <a href="https://maps.app.goo.gl/xTFxfyLCfxLvAEsL9" target="_blank">View on Google Maps</a>
                       </div>
                   `);
+
+                  // 添加大加那利岛标记
+            const granCanariaMarker = L.marker([27.9305, -15.5702], { icon: greenMarkerIcon }).addTo(map); // 大加那利岛的坐标
+            granCanariaMarker.bindPopup(`
+            <div style="max-width: 150px;">
+              <b>Gran Canaria</b><br>
+              这本是一个安静而人迹稀少的岛屿，十年前欧洲渴求阳光的游客，给它带来了不尽的繁荣。电影，摄影，手表，
+              这些赋重税的商店又挤满在大街小巷，一个个乱糟糟的大城，总觉得它有香港一式一样的气氛。
+              This was once a quiet island with few visitors. Ten years ago, European tourists seeking sunshine brought it endless prosperity. 
+              Shops selling heavily taxed items like movies, photography equipment, and watches are now crammed into every street and alley. 
+              These chaotic big cities always give me the same atmosphere as Hong Kong
+              -《逍遥七岛游》三毛.<br>
+              <img src="assets/img/map/gran.png" alt="Gran Canaria" style="width:100%; max-width: 100px; height: auto;"><br>
+              <a href="https://maps.app.goo.gl/jLLzeKwoho4GFRSq6" target="_blank">View on Google Maps</a>
+              </div>
+              `);
 
             // 添加布里斯班标记
             const brisbaneMarker = L.marker([-27.4698, 153.0251], { icon: blueMarkerIcon }).addTo(map); // 布里斯班的坐标
