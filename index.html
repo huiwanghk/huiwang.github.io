@@ -915,7 +915,7 @@
     </section>
 
     <!DOCTYPE html>
-    <html lang="zh">
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -951,44 +951,6 @@
         </style>
     </head>
     <body>
-    
-      <!DOCTYPE html>
-      <html lang="zh">
-      <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Travel Map</title>
-          <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-          <style>
-              /* 通用样式 */
-              body {
-                  font-family: Arial, sans-serif;
-                  margin: 0;
-                  padding: 0;
-              }
-              .section {
-                  padding: 20px;
-              }
-              .map-container {
-                  margin: 60px auto; /* 增加上外边距，增加空间 */
-                  padding: 10px;
-                  background-color: rgba(255, 255, 255, 0.8);
-                  border-radius: 8px;
-                  max-width: 1000px;
-                  height: 500px; /* 确保容器具有固定高度 */
-              }
-              /* 媒体查询：调整手机端显示 */
-              @media (max-width: 600px) {
-                  .text-container {
-                      margin-bottom: 10px; /* 减少文字容器的底部间距 */
-                  }
-                  .page-title {
-                      margin-bottom: 15px; /* 增加标题与文字容器之间的间距 */
-                  }
-              }
-          </style>
-      </head>
-      <body>
       
         <!DOCTYPE html>
         <html lang="en"> <!-- 将语言改为英语 -->
@@ -1046,6 +1008,12 @@
                 #clustr_globe {
                     margin-top: 40px; /* Increase top margin for more spacing */
                 }
+                /* Responsive styles */
+                @media (max-width: 600px) {
+                #clustr_globe {
+                    height: 300px; /* Reduce height on smaller screens */
+                }
+        }
             </style>
         </head>
         <body>
